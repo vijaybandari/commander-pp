@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Improve Electric Commander UI",
+  "description": "This extension adds some cool stuff to electric commander UI to make users job easy",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [ "jquery-2.1.1.js", "better-ec.js" ],
+      "matches": [ "https://*/commander/*" ],
+      "run_at" : "document_end"
+    }
+  ]
+}
