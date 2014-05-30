@@ -11,7 +11,12 @@
   "content_scripts": [
     {
       "js": [ "jquery-2.1.1.js", "better-ec.js" ],
-      "matches": [ "https://*/commander/*" ],
+      "matches": [ "https://*/commander/*/*home*" ],
+      "run_at" : "document_end"
+    },
+    {
+      "js": [ "jquery-2.1.1.js", "project-details.js" ],
+      "matches": [ "https://*/commander/*/projectDetails/*" ],
       "run_at" : "document_end"
     }
   ]
